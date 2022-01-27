@@ -673,7 +673,7 @@ data = {
 {text = '- تغيير معلومات المجموعة : '..info, data = UserId.. '/info'}, 
 },
 {
-{text = '- اضافه مستخدمين : '..invite, data = UserId.. '/invite'}, 
+{text = '- اضافة مستخدمين : '..invite, data = UserId.. '/invite'}, 
 },
 {
 {text = '- تثبيت الرسائل : '..pin, data = UserId.. '/pin'}, 
@@ -685,7 +685,7 @@ data = {
 {text = '- ارسال الرسائل : .'..messges, data = UserId.. '/messges'}, 
 },
 {
-{text = '- اضافه البوتات : '..other, data = UserId.. '/other'}, 
+{text = '- اضافة البوتات : '..other, data = UserId.. '/other'}, 
 },
 {
 {text = '- ارسال استفتاء : '..polls, data = UserId.. '/polls'}, 
@@ -1132,7 +1132,7 @@ return false
 end
 end
 
-if msg.content.luatele == "messageChatAddMembers" then -- اضافه اشخاص
+if msg.content.luatele == "messageChatAddMembers" then -- اضافة اشخاص
 print('This is Add Membeers ')
 Redis:incr(TheKOIA.."KOIA:Num:Add:Memp"..msg_chat_id..":"..msg.sender.user_id) 
 local AddMembrs = Redis:get(TheKOIA.."KOIA:Lock:AddMempar"..msg_chat_id) 
@@ -1395,7 +1395,7 @@ Redis:set(TheKOIA.."KOIA:Filter:Group:"..Text_Filter..msg_chat_id,text)
 end  
 Redis:del(TheKOIA.."KOIA:Filter:Text"..msg.sender.user_id..':'..msg_chat_id)  
 Redis:del(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id)
-return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم اضافه رد التحذير","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم اضافة رد التحذير","md",true)  
 end
 if text and (Redis:get(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id) == 'DelFilter') then   
 if text or msg.content.photo or msg.content.animation or msg.content.sticker then
@@ -2114,7 +2114,7 @@ if NewCmmd then
 text = (NewCmmd or text)
 end
 end
-if text == 'رفع النسخة الاحتياطيه' and msg.reply_to_message_id ~= 0 or text == 'رفع نسخة احتياطيه' and msg.reply_to_message_id ~= 0 then
+if text == 'رفع النسخة الاحتياطية' and msg.reply_to_message_id ~= 0 or text == 'رفع نسخة احتياطية' and msg.reply_to_message_id ~= 0 then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2362,7 +2362,7 @@ end
 Redis:set(TheKOIA.."KOIA:AddSudosNew"..msg_chat_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id," ⦁ ارسل معرف المطور الاساسي مع @","md",true)
 end
-if text == 'جلب النسخة الاحتياطيه ⌔' or text == 'جلب نسخة احتياطيه' then
+if text == 'جلب النسخة الاحتياطية ⌔' or text == 'جلب نسخة احتياطية' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2457,7 +2457,7 @@ Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
 File:write(Get_Json)
 File:close()
-return LuaTele.sendDocument(msg_chat_id,msg_id,'./'..UserBot..'.json', '*🇸🇦︙تم جلب النسخة الاحتياطيه\n🇸🇦︙تحتوي على {'..#Groups..'} مجموعة \n🇸🇦︙وتحتوي على {'..#UsersBot..'} مشترك *\n', 'md')
+return LuaTele.sendDocument(msg_chat_id,msg_id,'./'..UserBot..'.json', '*🇸🇦︙تم جلب النسخة الاحتياطية\n🇸🇦︙تحتوي على {'..#Groups..'} مجموعة \n🇸🇦︙وتحتوي على {'..#UsersBot..'} مشترك *\n', 'md')
 end
 if text == 'جلب نسخة الردود' then
 if not msg.ControllerBot then 
@@ -2944,7 +2944,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '❬ ✔️ ❭' else promote = '❬ ❌ ❭'
 end
-PermissionsUser = '*\n🇸🇦︙صلاحيات المستخدم :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙تغيير المعلومات : '..change_info..'\n🇸🇦︙تثبيت الرسائل : '..pin_messages..'\n🇸🇦︙اضافه مستخدمين : '..invite_users..'\n🇸🇦︙مسح الرسائل : '..delete_messages..'\n🇸🇦︙حظر المستخدمين : '..restrict_members..'\n🇸🇦︙اضافه المشرفين : '..promote..'\n\n*'
+PermissionsUser = '*\n🇸🇦︙صلاحيات المستخدم :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙تغيير المعلومات : '..change_info..'\n🇸🇦︙تثبيت الرسائل : '..pin_messages..'\n🇸🇦︙اضافة مستخدمين : '..invite_users..'\n🇸🇦︙مسح الرسائل : '..delete_messages..'\n🇸🇦︙حظر المستخدمين : '..restrict_members..'\n🇸🇦︙اضافة المشرفين : '..promote..'\n\n*'
 end
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🇸🇦︙ايديك : '..UserId..
@@ -2987,7 +2987,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '❬ ✔️ ❭' else promote = '❬ ❌ ❭'
 end
-PermissionsUser = '*\n🇸🇦︙صلاحيات البوت في المجموعة :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙تغيير المعلومات : '..change_info..'\n🇸🇦︙تثبيت الرسائل : '..pin_messages..'\n🇸🇦︙اضافه مستخدمين : '..invite_users..'\n🇸🇦︙مسح الرسائل : '..delete_messages..'\n🇸🇦︙حظر المستخدمين : '..restrict_members..'\n🇸🇦︙اضافه المشرفين : '..promote..'\n\n*'
+PermissionsUser = '*\n🇸🇦︙صلاحيات البوت في المجموعة :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙تغيير المعلومات : '..change_info..'\n🇸🇦︙تثبيت الرسائل : '..pin_messages..'\n🇸🇦︙اضافة مستخدمين : '..invite_users..'\n🇸🇦︙مسح الرسائل : '..delete_messages..'\n🇸🇦︙حظر المستخدمين : '..restrict_members..'\n🇸🇦︙اضافة المشرفين : '..promote..'\n\n*'
 return LuaTele.sendText(msg_chat_id,msg_id,PermissionsUser,"md",true) 
 end
 
@@ -6092,7 +6092,7 @@ Redis:set(TheKOIA.."KOIA:Lock:text"..msg_chat_id,true)
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الدردشة").Lock,"md",true)  
 return false
 end 
-if text == "قفل الاضافه" then 
+if text == "قفل الاضافة" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6207,7 +6207,7 @@ end
 
 
 --------------------------------------------------------------------------------------------------------------
-if text == "فتح الاضافه" then 
+if text == "فتح الاضافة" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7892,7 +7892,7 @@ end
 Redis:set(TheKOIA.."KOIA:All:Command:Reids:Group:Del"..msg_chat_id..":"..msg.sender.user_id,"true") 
 return LuaTele.sendText(msg_chat_id,msg_id," 🇸🇦︙ارسل الان الامر الذي قمت بوضعه مكان الامر القديم","md",true)
 end
-if text == "حذف الاوامر المضافه العامه" or text == "مسح الاوامر المضافه العامه" then 
+if text == "حذف الاوامر المضافة العامه" or text == "مسح الاوامر المضافة العامه" then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙هذا الامر يخص 『 '..Controller_Num(1)..' 』* ',"md",true)  
 end
@@ -7907,7 +7907,7 @@ Redis:del(TheKOIA.."KOIA:All:Command:List:Group")
 end
 return LuaTele.sendText(msg_chat_id,msg_id," 🇸🇦︙تم مسح جميع الاوامر التي تم اضافتها في العام","md",true)
 end
-if text == "الاوامر المضافه العامه" then
+if text == "الاوامر المضافة العامه" then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙هذا الامر يخص 『 '..Controller_Num(1)..' 』* ',"md",true)  
 end
@@ -7916,7 +7916,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = ''..Re
 return LuaTele.sendText(msg.chat_id,msg.id,'\n• يجب عليك الاشتراك في القناه',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(TheKOIA.."KOIA:All:Command:List:Group")
-Command = " 🇸🇦︙قائمة الاوامر المضافه العامه  \n⩹┉┉┉┉⊶❲𖥳𝗠𝗔𝗟𝗔𝗠𝗢 𖥳❳⊷┉┉┉┉⩺\n"
+Command = " 🇸🇦︙قائمة الاوامر المضافة العامه  \n⩹┉┉┉┉⊶❲𖥳𝗠𝗔𝗟𝗔𝗠𝗢 𖥳❳⊷┉┉┉┉⩺\n"
 for k,v in pairs(list) do
 Commands = Redis:get(TheKOIA.."KOIA:All:Get:Reides:Commands:Group"..v)
 if Commands then 
@@ -7953,7 +7953,7 @@ end
 Redis:set(TheKOIA.."KOIA:Command:Reids:Group:Del"..msg_chat_id..":"..msg.sender.user_id,"true") 
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙ارسل الان الامر الذي قمت بوضعه مكان الامر القديم","md",true)
 end
-if text == "حذف الاوامر المضافه" or text == "مسح الاوامر المضافه" then 
+if text == "حذف الاوامر المضافة" or text == "مسح الاوامر المضافة" then 
 if not msg.Managers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(6)..' }* ',"md",true)  
 end
@@ -7968,7 +7968,7 @@ Redis:del(TheKOIA.."KOIA:Command:List:Group"..msg_chat_id)
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم مسح جميع الاوامر التي تم اضافتها","md",true)
 end
-if text == "الاوامر المضافه" then
+if text == "الاوامر المضافة" then
 if not msg.Managers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(6)..' }* ',"md",true)  
 end
@@ -7977,7 +7977,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(TheKOIA.."KOIA:Command:List:Group"..msg_chat_id.."")
-Command = "🇸🇦︙قائمة الاوامر المضافه  \n≪━━━●مسلم●━━━≫\n"
+Command = "🇸🇦︙قائمة الاوامر المضافة  \n≪━━━●مسلم●━━━≫\n"
 for k,v in pairs(list) do
 Commands = Redis:get(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..v)
 if Commands then 
@@ -8256,7 +8256,7 @@ end
 if Get_Chat.permissions.can_send_polls then
 polls = '❬ ✔️ ❭' else polls = '❬ ❌ ❭'
 end
-local permissions = '*\n🇸🇦︙صلاحيات المجموعة :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙ارسال الويب : '..web..'\n🇸🇦︙تغيير معلومات المجموعة : '..info..'\n🇸🇦︙اضافه مستخدمين : '..invite..'\n🇸🇦︙تثبيت الرسائل : '..pin..'\n🇸🇦︙ارسال الميديا : '..media..'\n🇸🇦︙ارسال الرسائل : '..messges..'\n🇸🇦︙اضافه البوتات : '..other..'\n🇸🇦︙ارسال استفتاء : '..polls..'*\n\n'
+local permissions = '*\n🇸🇦︙صلاحيات المجموعة :\n≪━━━●مسلم●━━━≫'..'\n🇸🇦︙ارسال الويب : '..web..'\n🇸🇦︙تغيير معلومات المجموعة : '..info..'\n🇸🇦︙اضافة مستخدمين : '..invite..'\n🇸🇦︙تثبيت الرسائل : '..pin..'\n🇸🇦︙ارسال الميديا : '..media..'\n🇸🇦︙ارسال الرسائل : '..messges..'\n🇸🇦︙اضافة البوتات : '..other..'\n🇸🇦︙ارسال استفتاء : '..polls..'*\n\n'
 local TextChat = '*\n🇸🇦︙معلومات المجموعة :\n≪━━━●مسلم●━━━≫'..' \n🇸🇦︙عدد الادامن : ❬ '..Info_Chats.administrator_count..' ❭\n🇸🇦︙عدد المحظورين : ❬ '..Info_Chats.banned_count..' ❭\n🇸🇦︙عدد الاعضاء : ❬ '..Info_Chats.member_count..' ❭\n🇸🇦︙عدد المقيديين : ❬ '..Info_Chats.restricted_count..' ❭\n🇸🇦︙اسم المجموعة : ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭*'
 return LuaTele.sendText(msg_chat_id,msg_id, TextChat..permissions,"md",true)
 end
@@ -8306,7 +8306,7 @@ data = {
 {text = '- تغيير معلومات المجموعة : '..info, data =msg.sender.user_id..  '/info'}, 
 },
 {
-{text = '- اضافه مستخدمين : '..invite, data =msg.sender.user_id..  '/invite'}, 
+{text = '- اضافة مستخدمين : '..invite, data =msg.sender.user_id..  '/invite'}, 
 },
 {
 {text = '- تثبيت الرسائل : '..pin, data =msg.sender.user_id..  '/pin'}, 
@@ -8318,7 +8318,7 @@ data = {
 {text = '- ارسال الرسائل : .'..messges, data =msg.sender.user_id..  '/messges'}, 
 },
 {
-{text = '- اضافه البوتات : '..other, data =msg.sender.user_id..  '/other'}, 
+{text = '- اضافة البوتات : '..other, data =msg.sender.user_id..  '/other'}, 
 },
 {
 {text = '- ارسال استفتاء : '..polls, data =msg.sender.user_id.. '/polls'}, 
@@ -8742,13 +8742,13 @@ Redis:del(TheKOIA..'KOIA:Num:Message:Edit'..msg.chat_id..':'..msg.sender.user_id
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع تعديلاتك ',"md",true)  
 elseif text == 'مسح جهاتي' then
 Redis:del(TheKOIA..'KOIA:Num:Add:Memp'..msg.chat_id..':'..msg.sender.user_id)
-LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع جهاتك المضافه ',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع جهاتك المضافة ',"md",true)  
 elseif text == 'رسائلي' then
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد رسائلك هنا *~ '..(Redis:get(TheKOIA..'KOIA:Num:Message:User'..msg.chat_id..':'..msg.sender.user_id) or 1)..'*',"md",true)  
 elseif text == 'تعديلاتي' or text == 'تعديلاتي' then
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد التعديلات هنا *~ '..(Redis:get(TheKOIA..'KOIA:Num:Message:Edit'..msg.chat_id..msg.sender.user_id) or 0)..'*',"md",true)  
 elseif text == 'جهاتي' then
-LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد جهاتك المضافه هنا *~ '..(Redis:get(TheKOIA.."KOIA:Num:Add:Memp"..msg.chat_id..":"..msg.sender.user_id) or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد جهاتك المضافة هنا *~ '..(Redis:get(TheKOIA.."KOIA:Num:Add:Memp"..msg.chat_id..":"..msg.sender.user_id) or 0)..'*',"md",true)  
 elseif text == 'مسح' and msg.reply_to_message_id ~= 0 and msg.Addictive then
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheKOIA..'KOIA:Channel:Join')}, },}}
@@ -8771,7 +8771,7 @@ end
 Redis:setex(TheKOIA.."KOIA:Set:Id:Groups"..msg.chat_id..""..msg.sender.user_id,240,true)  
 return LuaTele.sendText(msg_chat_id,msg_id,[[
  🇸🇦︙ ارسل الان النص
- 🇸🇦︙ يمكنك اضافه :
+ 🇸🇦︙ يمكنك اضافة :
  🇸🇦︙ `#username` » اسم المستخدم
  🇸🇦︙ `#msgs` » عدد الرسائل
  🇸🇦︙ `#photos` » عدد الصور
@@ -8807,7 +8807,7 @@ end
 Redis:setex(TheKOIA.."KOIA:Redis:Id:Group"..msg.chat_id..""..msg.sender.user_id,240,true)  
 return LuaTele.sendText(msg_chat_id,msg_id,[[
 🇸🇦︙ارسل الان النص
-🇸🇦︙يمكنك اضافه :
+🇸🇦︙يمكنك اضافة :
 🇸🇦︙`#username` » اسم المستخدم
 🇸🇦︙`#msgs` » عدد الرسائل
 🇸🇦︙`#photos` » عدد الصور
@@ -11023,7 +11023,7 @@ if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙عذرآ لا تستطيع استخدام الامر على البوت ","md",true)  
 end
 Redis:incrby(TheKOIA.."KOIA:Num:Add:Games"..msg.chat_id..Message_Reply.sender.user_id, text:match("^اضف مجوهرات (%d+)$"))  
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"🇸🇦︙تم اضافه له { "..text:match("^اضف مجوهرات (%d+)$").." } من المجوهرات").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"🇸🇦︙تم اضافة له { "..text:match("^اضف مجوهرات (%d+)$").." } من المجوهرات").Reply,"md",true)  
 end
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id ~= 0 then
 if ChannelJoin(msg) == false then
@@ -11042,7 +11042,7 @@ if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙عذرآ لا تستطيع استخدام الامر على البوت ","md",true)  
 end
 Redis:incrby(TheKOIA.."KOIA:Num:Message:User"..msg.chat_id..":"..Message_Reply.sender.user_id, text:match("^اضف رسائل (%d+)$"))  
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"🇸🇦︙تم اضافه له { "..text:match("^اضف رسائل (%d+)$").." } من الرسائل").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"🇸🇦︙تم اضافة له { "..text:match("^اضف رسائل (%d+)$").." } من الرسائل").Reply,"md",true)  
 end
 if text == "مجوهراتي" then 
 local Num = Redis:get(TheKOIA.."KOIA:Num:Add:Games"..msg.chat_id..msg.sender.user_id) or 0
@@ -11201,7 +11201,7 @@ data = {
 {text = 'تنظيف المجموعات ⌔',type = 'text'},{text = 'تنظيف المشتركين ⌔', type = 'text'},
 },
 {
-{text = 'جلب النسخة الاحتياطيه ⌔',type = 'text'},
+{text = 'جلب النسخة الاحتياطية ⌔',type = 'text'},
 },
 {
 {text = 'اضف رد عام ⌔',type = 'text'},{text = 'حذف رد عام ⌔', type = 'text'},
@@ -12197,7 +12197,7 @@ local TextHelp = [[*
 🇸🇦︙اضف رسائل ← { بالرد او الايدي }
 🇸🇦︙اضف مجوهرات ← { بالرد او الايدي }
 🇸🇦︙اضف ، حذف ← { امر }
-🇸🇦︙الاوامر المضافه ، مسح الاوامر المضافه
+🇸🇦︙الاوامر المضافة ، مسح الاوامر المضافة
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -12453,7 +12453,7 @@ local UserId = Text:match('(%d+)/lock_addmem')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:set(TheKOIA.."KOIA:Lock:AddMempar"..ChatId,"kick")  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
-LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"🇸🇦︙تم قفـل الاضافه").Lock, 'md', true, false, reply_markup)
+LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"🇸🇦︙تم قفـل الاضافة").Lock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/lock_videonote') then
 local UserId = Text:match('(%d+)/lock_videonote')
@@ -13160,11 +13160,11 @@ if Text and Text:match('(%d+)/groupNum6//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum6//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).promote) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية اضافه مشرفين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية اضافة مشرفين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'❬ ❌ ❭')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 0})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية اضافه مشرفين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية اضافة مشرفين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'❬ ✔️ ❭')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 1})
 end
@@ -13322,7 +13322,7 @@ data = {
 {text = GetSetieng(ChatId).lock_join, data = '&'},{text = 'الدخول : ', data =IdUser..'/'.. 'Status_joine'},
 },
 {
-{text = GetSetieng(ChatId).lock_add, data = '&'},{text = 'الاضافه : ', data =IdUser..'/'.. 'Status_addmem'},
+{text = GetSetieng(ChatId).lock_add, data = '&'},{text = 'الاضافة : ', data =IdUser..'/'.. 'Status_addmem'},
 },
 {
 {text = GetSetieng(ChatId).lock_self, data = '&'},{text = 'بصمه فيديو : ', data =IdUser..'/'.. 'Status_videonote'},
@@ -13758,17 +13758,17 @@ local UserId = Text:match('(%d+)/Status_addmem')
 if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {
-{text = 'قفل الاضافه', data =UserId..'/'.. 'lock_addmem'},
+{text = 'قفل الاضافة', data =UserId..'/'.. 'lock_addmem'},
 },
 {
-{text = 'فتح الاضافه', data =UserId..'/'.. 'unlock_addmem'},
+{text = 'فتح الاضافة', data =UserId..'/'.. 'unlock_addmem'},
 },
 {
 {text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},
 },
 }
 }
-LuaTele.editMessageText(ChatId,Msg_id,"🇸🇦︙عليك اختيار نوع القفل او الفتح على امر الاضافه", 'md', true, false, reply_markup)
+LuaTele.editMessageText(ChatId,Msg_id,"🇸🇦︙عليك اختيار نوع القفل او الفتح على امر الاضافة", 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/Status_videonote') then
 local UserId = Text:match('(%d+)/Status_videonote')
@@ -14029,7 +14029,7 @@ local UserId = Text:match('(%d+)/unlock_addmem')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(TheKOIA.."KOIA:Lock:AddMempar"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
-LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"🇸🇦︙تم فتح الاضافه").unLock, 'md', true, false, reply_markup)
+LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"🇸🇦︙تم فتح الاضافة").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_videonote') then
 local UserId = Text:match('(%d+)/unlock_videonote')
