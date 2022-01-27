@@ -10,34 +10,45 @@ sudo luarocks install luasocket ; sudo luarocks install luasec ; sudo luarocks i
 
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
+
 2- sudo  tar zxpf luarocks-2.4.3.tar.gz
 cd luarocks-2.4.3
 ./configure; sudo make bootstrap
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 3- sudo luarocks install luasocket
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 4- sudo luarocks install luasec
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 5- sudo luarocks install luautf8
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 6- sudo luarocks install redis-lua
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 7- sudo  luarocks remove lua-cjson2
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 8- sudo  luarocks remove lua-cjson
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 9- sudo  apt-get install lua-cjson
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
 
 10- sudo luarocks install Lua-cURL
 cd ..
+
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
+
 بعدها تاخذ هذا الكود وتلصقه حتى يتم تنصيب السورس ومبروك عليك 
 git clone https://github.com/Yosef-lbban2/YJV ; cd YJV ; chmod +x * ; ./KOLA
