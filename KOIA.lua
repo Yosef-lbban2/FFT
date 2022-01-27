@@ -5232,8 +5232,8 @@ LuaTele.setChatMemberStatus(msg.chat_id,UserId_Info.id,'restricted',{1,0,0,0,0,0
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId_Info.id,"🇸🇦︙تم تقييده في المجموعة ").Reply,"md",true)  
 end
 
-if text and text:match('^الغاء التقييد @(%S+)$') then
-local UserName = text:match('^الغاء التقييد @(%S+)$')
+if text and text:match('^الغاء تقييد @(%S+)$') then
+local UserName = text:match('^الغاء تقييد @(%S+)$')
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -5556,7 +5556,7 @@ LuaTele.setChatMemberStatus(msg.chat_id,Message_Reply.sender.user_id,'restricted
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"🇸🇦︙تم تقييده في المجموعة ").Reply,"md",true)  
 end
 
-if text == ('الغاء التقييد') and msg.reply_to_message_id ~= 0 then
+if text == ('الغاء تقييد') and msg.reply_to_message_id ~= 0 then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -5796,8 +5796,8 @@ LuaTele.setChatMemberStatus(msg.chat_id,UserId,'restricted',{1,0,0,0,0,0,0,0,0})
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"🇸🇦︙تم تقييده في المجموعة ").Reply,"md",true)  
 end
 
-if text and text:match('^الغاء التقييد (%d+)$') then
-local UserId = text:match('^الغاء التقييد (%d+)$')
+if text and text:match('^الغاء تقييد (%d+)$') then
+local UserId = text:match('^الغاء تقييد (%d+)$')
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
