@@ -1106,7 +1106,7 @@ LuaTele.setChatMemberStatus(msg.chat_id,msg.sender.user_id,'banned',0)
 end
 print('This is games')
 end 
-if msg.content.luatele == "messagePinMessage" then -- رساله التثبيت
+if msg.content.luatele == "messagePinMessage" then -- رسالة التثبيت
 local Pin_Msg = Redis:get(TheKOIA.."KOIA:lockpin"..msg_chat_id)
 if Pin_Msg and not msg.Managers then
 if Pin_Msg:match("(%d+)") then 
@@ -1385,7 +1385,7 @@ Redis:sadd(TheKOIA.."KOIA:List:Filter"..msg_chat_id,'text:'..text)
 Filters = 'نص'
 end
 Redis:set(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id,'true1')
-return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙ارسل تحذير ( "..Filters.." ) عند ارساله","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙ارسل تحذير ( "..Filters.." ) عند ارسالة","md",true)  
 end
 end
 if text and (Redis:get(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id) == 'true1') then
@@ -1432,7 +1432,7 @@ DelFilters = msg.content.sticker.sticker.id
 statusfilter = 'الملصق'
 elseif text then
 DelFilters = text
-statusfilter = 'الرساله'
+statusfilter = 'الرسالة'
 end
 local ReplyFilters = Redis:get(TheKOIA.."KOIA:Filter:Group:"..DelFilters..msg_chat_id)
 if ReplyFilters and not msg.Distinguished then
@@ -1568,7 +1568,7 @@ Redis:sadd(TheKOIA.."KOIA:List:Manager"..msg_chat_id.."", text)
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي الرد سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ↯︙يمكنك اضافة الى النص •
 ≪━━━●مسلم●━━━≫
  `#username` ↬ معرف المستخدم
@@ -1751,7 +1751,7 @@ Redis:sadd(TheKOIA.."KOIA:List:Rd:Sudo", text)
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي الرد سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ↯︙يمكنك اضافة الى النص •
 ≪━━━●مسلم●━━━≫
  `#username` ↬ معرف المستخدم
@@ -3015,7 +3015,7 @@ local deleteMessages = LuaTele.deleteMessages(msg.chat_id,{[1]= Message})
 var(deleteMessages)
 Message = Message - 1048576
 end
-LuaTele.sendText(msg_chat_id, msg_id, "🇸🇦︙تم تنظيف - "..NumMessage.. ' رساله', 'md')
+LuaTele.sendText(msg_chat_id, msg_id, "🇸🇦︙تم تنظيف - "..NumMessage.. ' رسالة', 'md')
 end
 
 if text and text:match('^تنزيل (.*) @(%S+)$') then
@@ -4390,7 +4390,7 @@ end
 local list = Redis:smembers(TheKOIA.."KOIA1:List:Rd:Sudo"..msg.chat_id)
 text = "\nقائمة ردود المتعدده \n━━━━━━━━\n"
 for k,v in pairs(list) do
-db = "رساله "
+db = "رسالة "
 text = text..""..k.." => {"..v.."} => {"..db.."}\n"
 end
 if #list == 0 then
@@ -4510,7 +4510,7 @@ end
 local list = Redis:smembers(TheKOIA.."KOIA11:List:Rd:Sudo")
 text = "\nقائمة ردود المتعدده \n━━━━━━━━\n"
 for k,v in pairs(list) do
-db = "رساله "
+db = "رسالة "
 text = text..""..k.." => {"..v.."} => {"..db.."}\n"
 end
 if #list == 0 then
@@ -7856,7 +7856,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = ''..Re
 return LuaTele.sendText(msg.chat_id,msg.id,'\n• يجب عليك الاشتراك في القناه',"md",false, false, false, false, reply_markup)
 end
 Redis:set(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id,'true')
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙ارسل الان { ملصق ,متحركة ,صورة ,رساله } *',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙ارسل الان { ملصق ,متحركة ,صورة ,رسالة } *',"md",true)  
 end    
 if text == "الغاء منع" then    
 if not msg.Addictive then
@@ -7867,7 +7867,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = ''..Re
 return LuaTele.sendText(msg.chat_id,msg.id,'\n• يجب عليك الاشتراك في القناه',"md",false, false, false, false, reply_markup)
 end
 Redis:set(TheKOIA..'KOIA:FilterText'..msg_chat_id..':'..msg.sender.user_id,'DelFilter')
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙ارسل الان { ملصق ,متحركة ,صورة ,رساله } *',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙ارسل الان { ملصق ,متحركة ,صورة ,رسالة } *',"md",true)  
 end
 
 if text == "اضف امر عام" then
@@ -8006,7 +8006,7 @@ end
 if GetInfoBot(msg).PinMsg == false then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تثبيت الرسائل* ',"md",true)  
 end
-LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم تثبيت الرساله","md",true)
+LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم تثبيت الرسالة","md",true)
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local PinMsg = LuaTele.pinChatMessage(msg_chat_id,Message_Reply.id,true)
 end
@@ -8024,7 +8024,7 @@ end
 if GetInfoBot(msg).PinMsg == false then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تثبيت الرسائل* ',"md",true)  
 end
-LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم الغاء تثبيت الرساله","md",true)
+LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم الغاء تثبيت الرسالة","md",true)
 LuaTele.unpinChatMessage(msg_chat_id) 
 end
 if text == 'الغاء تثبيت الكل' then
@@ -9165,7 +9165,7 @@ db = "بصمه 📢"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Manager:Stekrs"..v..msg_chat_id) then
 db = "ملصق 🃏"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Manager:Text"..v..msg_chat_id) then
-db = "رساله ✉"
+db = "رسالة ✉"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Manager:Photo"..v..msg_chat_id) then
 db = "صورة 🎇"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Manager:Video"..v..msg_chat_id) then
@@ -9247,7 +9247,7 @@ db = "بصمه 📢"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:stekr"..v) then
 db = "ملصق 🃏"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Text"..v) then
-db = "رساله ✉"
+db = "رسالة ✉"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Photo"..v) then
 db = "صورة 🎇"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Video"..v) then
@@ -9300,7 +9300,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Users" .. msg_chat_id .. ":" .. msg.send
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -9320,7 +9320,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sen
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -9340,7 +9340,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -11004,7 +11004,7 @@ end
 local NumberGet = (NumGame * 50)
 Redis:decrby(TheKOIA.."KOIA:Num:Add:Games"..msg.chat_id..msg.sender.user_id,NumGame)  
 Redis:incrby(TheKOIA.."KOIA:Num:Message:User"..msg.chat_id..":"..msg.sender.user_id,NumGame)  
-return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم خصم *~ { "..NumGame.." }* من مجوهراتك \n🇸🇦︙وتم اضافة* ~ { "..(NumGame * 50).." } رساله الى رسالك *","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم خصم *~ { "..NumGame.." }* من مجوهراتك \n🇸🇦︙وتم اضافة* ~ { "..(NumGame * 50).." } رسالة الى رسالك *","md",true)  
 end 
 if text and text:match("^اضف مجوهرات (%d+)$") and msg.reply_to_message_id ~= 0 then
 if ChannelJoin(msg) == false then
@@ -11405,7 +11405,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Users" .. msg_chat_id .. ":" .. msg.send
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -11425,7 +11425,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sen
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -11445,7 +11445,7 @@ Redis:setex(TheKOIA.."KOIA:Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg
 LuaTele.sendText(msg_chat_id,msg_id,[[
 ↯︙ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركة • صورة
- • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
+ • فيديو • بصمه الفيديو • بصمه • صوت • رسالة ❩
 ≪━━━●مسلم●━━━≫
 ↯︙للخروج ارسل ( الغاء )
  ✓
@@ -11497,7 +11497,7 @@ db = "بصمه 📢"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:stekr"..v) then
 db = "ملصق 🃏"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Text"..v) then
-db = "رساله ✉"
+db = "رسالة ✉"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Photo"..v) then
 db = "صورة 🎇"
 elseif Redis:get(TheKOIA.."KOIA:Add:Rd:Sudo:Video"..v) then
@@ -12288,7 +12288,7 @@ local TextHelp = [[*
 🇸🇦︙لعبة السمايلات » سمايلات
 ≪━━━●مسلم●━━━≫
 🇸🇦︙مجوهراتي ← لعرض عدد الارباح
-🇸🇦︙بيع مجوهراتي ← { العدد } ← لبيع كل مجوهره مقابل {50} رساله
+🇸🇦︙بيع مجوهراتي ← { العدد } ← لبيع كل مجوهره مقابل {50} رسالة
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
