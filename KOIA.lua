@@ -9866,7 +9866,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*امـشي وخࢪ مـنـا يدوࢪ تـڪـبيل😏 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*في أحد قلك هنا  مكتب زواج ️*',"md",false, false, false, false, reply_markup)
 end
 
 
@@ -9882,7 +9882,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*شـعليڪ بـي عمࢪيي خـلي يـزحف💘☹️ ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*عييييب ️*',"md",false, false, false, false, reply_markup)
 end
 
 
@@ -9899,7 +9899,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*اسـف عمࢪيي مـا خليڪ بـحـلڪي😹💘 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*تربية شوارع ️*',"md",false, false, false, false, reply_markup)
 end
 
 if text == 'زحف' or text == 'زاحفه' then
@@ -9914,7 +9914,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*زاحـف ع خـالـڪ شـڪࢪه🤤💋 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*عيب*',"md",false, false, false, false, reply_markup)
 end
 
 if text == 'دي' or text == 'دد' then
@@ -9944,7 +9944,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*ويـنـه بـلـه خـل حـصـࢪه😹🤤 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*هذي تربية أهلك ؟ ️*',"md",false, false, false, false, reply_markup)
 end
 
 if text == 'تعالي خاص' or text == 'خاص' then
@@ -9959,7 +9959,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*هااا يـول اخـذتـها خـاص😹🙊 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*طلب الخاص حظر*',"md",false, false, false, false, reply_markup)
 end
 if text == 'اكرهك' or text == 'اكرهج' then
 if not Redis:get(TheKOIA.."KOIA:Sasa:Jeka"..msg_chat_id) then
@@ -10018,7 +10018,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'*حـبيـبي ولله ࢪبـط فـيـشه ويـانـا🙈💋 ️*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'*الباب يفوت جمل*',"md",false, false, false, false, reply_markup)
 end
 
 if text == 'واكف' or text == 'وكف' then
@@ -10118,12 +10118,12 @@ end
 if text == (Redis:get(TheKOIA.."KOIA:Name:Bot") or "يوسف") then
 local NamesBot = (Redis:get(TheKOIA.."KOIA:Name:Bot") or "يوسف")
 local NameBots = {
-"عمر "..NamesBot.. " شتريد؟",
-"أჂ̤ أჂ̤ هياتني اني",
-"موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات يوسف بعدين اجاوبك",
-"راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
-'يمعود والله نعسان'
+"عمر "..NamesBot.. " ايش تبغا هاه",
+"أنت البوت ",
+"انا في العمل",
+"اصعد مايك وخليني في حالي",
+"أنا نايم "..NamesBot,
+'مني فاضيلك'
 }
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
