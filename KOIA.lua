@@ -2592,7 +2592,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
+{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحماية ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
 },
 {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
@@ -2675,7 +2675,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
+{text = '‹ رفع الادمنيه ›', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحماية ›', data =msg.sender.user_id..'/LockAllGroup@'..msg_chat_id},
 },
 {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
@@ -8049,7 +8049,7 @@ break
 end
 end
 end
-if text == "الحمايه" then    
+if text == "الحماية" then    
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -8097,7 +8097,7 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id, msg_id, '᥀︙اوامر التفعيل والتعطيل ', 'md', false, false, false, false, reply_markup)
 end  
-if text == 'اعدادات الحمايه' then 
+if text == 'اعدادات الحماية' then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -8138,7 +8138,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Status:AddMe"..msg.chat_id) then
 StatusAddme = '❬ ✔️ ❭' else StatusAddme = '❬ ❌ ❭'
 end
-local protectionGroup = '\n*᥀︙اعدادات حمايه المجموعه\n — — — — — — — — —\n'
+local protectionGroup = '\n*᥀︙اعدادات حماية المجموعه\n — — — — — — — — —\n'
 ..'\n᥀︙جلب الرابط ➤ '..Statuslink
 ..'\n᥀︙جلب الترحيب ➤ '..StatusWelcome
 ..'\n᥀︙الايدي ➤ '..StatusId
@@ -9672,7 +9672,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = msg.sender.user_id..'/help1'}, {text = ' اوامر الادمنيه', data = msg.sender.user_id..'/help2'}, 
+{text = 'اوامر الحماية', data = msg.sender.user_id..'/help1'}, {text = ' اوامر الادمنيه', data = msg.sender.user_id..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = msg.sender.user_id..'/help3'}, {text = 'اوامر المنشئين', data = msg.sender.user_id..'/help4'}, 
@@ -9691,7 +9691,7 @@ data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ᥀︙توجد ← 5 اوامر في البوت
 — — — — — — — — —
-᥀︙ارسل { م1 } ← اوامر الحمايه
+᥀︙ارسل { م1 } ← اوامر الحماية
 ᥀︙ارسل { م2 } ← اوامر الادمنيه
 ᥀︙ارسل { م3 } ← اوامر المدراء
 ᥀︙ارسل { م4 } ← اوامر المنشئين
@@ -11997,7 +11997,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12014,10 +12014,10 @@ data = {
 }
 }
 local TextHelp = [[*
-᥀︙اوامر الحمايه اتبع مايلي ...
+᥀︙اوامر الحماية اتبع مايلي ...
 — — — — — — — — —
 ᥀︙قفل ، فتح ← الامر 
-᥀︙تستطيع قفل حمايه كما يلي ...
+᥀︙تستطيع قفل حماية كما يلي ...
 ᥀︙← { بالتقيد ، بالطرد ، بالكتم }
 — — — — — — — — —
 ᥀︙الروابط
@@ -12055,7 +12055,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12114,7 +12114,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12167,7 +12167,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12207,7 +12207,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12262,7 +12262,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12303,7 +12303,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
+{text = 'اوامر الحماية', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'}, 
 },
 {
 {text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'}, 
@@ -12322,7 +12322,7 @@ data = {
 local TextHelp = [[*
 ᥀︙توجد ← 5 اوامر في البوت
 — — — — — — — — —
-᥀︙ارسل { م1 } ← اوامر الحمايه
+᥀︙ارسل { م1 } ← اوامر الحماية
 ᥀︙ارسل { م2 } ← اوامر الادمنيه
 ᥀︙ارسل { م3 } ← اوامر المدراء
 ᥀︙ارسل { م4 } ← اوامر المنشئين
