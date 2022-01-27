@@ -323,7 +323,7 @@ end
 if Redis:hget(TheKOIA.."KOIA:Spam:Group:User"..ChatId, "Spam:User") == "kick" then     
 flood = "بالطرد "     
 elseif Redis:hget(TheKOIA.."KOIA:Spam:Group:User"..ChatId,"Spam:User") == "keed" then     
-flood = "بالتقيد "     
+flood = "بالتقييد "     
 elseif Redis:hget(TheKOIA.."KOIA:Spam:Group:User"..ChatId,"Spam:User") == "mute" then     
 flood = "بالكتم "           
 elseif Redis:hget(TheKOIA.."KOIA:Spam:Group:User"..ChatId,"Spam:User") == "del" then     
@@ -334,7 +334,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Photo"..ChatId) == "del" then
 lock_photo = "✔️" 
 elseif Redis:get(TheKOIA.."KOIA:Lock:Photo"..ChatId) == "ked" then 
-lock_photo = "بالتقيد "   
+lock_photo = "بالتقييد "   
 elseif Redis:get(TheKOIA.."KOIA:Lock:Photo"..ChatId) == "ktm" then 
 lock_photo = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Photo"..ChatId) == "kick" then 
@@ -345,7 +345,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Contact"..ChatId) == "del" then
 lock_phon = "✔️" 
 elseif Redis:get(TheKOIA.."KOIA:Lock:Contact"..ChatId) == "ked" then 
-lock_phon = "بالتقيد "    
+lock_phon = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Contact"..ChatId) == "ktm" then 
 lock_phon = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Contact"..ChatId) == "kick" then 
@@ -356,7 +356,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Link"..ChatId) == "del" then
 lock_links = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Link"..ChatId) == "ked" then
-lock_links = "بالتقيد "    
+lock_links = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Link"..ChatId) == "ktm" then
 lock_links = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Link"..ChatId) == "kick" then
@@ -367,7 +367,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Cmd"..ChatId) == "del" then
 lock_cmds = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Cmd"..ChatId) == "ked" then
-lock_cmds = "بالتقيد "    
+lock_cmds = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Cmd"..ChatId) == "ktm" then
 lock_cmds = "بالكتم "   
 elseif Redis:get(TheKOIA.."KOIA:Lock:Cmd"..ChatId) == "kick" then
@@ -378,7 +378,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:User:Name"..ChatId) == "del" then
 lock_user = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:User:Name"..ChatId) == "ked" then
-lock_user = "بالتقيد "    
+lock_user = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:User:Name"..ChatId) == "ktm" then
 lock_user = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:User:Name"..ChatId) == "kick" then
@@ -389,7 +389,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:hashtak"..ChatId) == "del" then
 lock_hash = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:hashtak"..ChatId) == "ked" then 
-lock_hash = "بالتقيد "    
+lock_hash = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:hashtak"..ChatId) == "ktm" then 
 lock_hash = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:hashtak"..ChatId) == "kick" then 
@@ -400,7 +400,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "del" then
 lock_muse = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "ked" then 
-lock_muse = "بالتقيد "    
+lock_muse = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "ktm" then 
 lock_muse = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "kick" then 
@@ -411,7 +411,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Video"..ChatId) == "del" then
 lock_ved = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Video"..ChatId) == "ked" then 
-lock_ved = "بالتقيد "    
+lock_ved = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Video"..ChatId) == "ktm" then 
 lock_ved = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Video"..ChatId) == "kick" then 
@@ -422,7 +422,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Animation"..ChatId) == "del" then
 lock_gif = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Animation"..ChatId) == "ked" then 
-lock_gif = "بالتقيد "    
+lock_gif = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Animation"..ChatId) == "ktm" then 
 lock_gif = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Animation"..ChatId) == "kick" then 
@@ -433,7 +433,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Sticker"..ChatId) == "del" then
 lock_ste = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Sticker"..ChatId) == "ked" then 
-lock_ste = "بالتقيد "    
+lock_ste = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Sticker"..ChatId) == "ktm" then 
 lock_ste = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Sticker"..ChatId) == "kick" then 
@@ -444,7 +444,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:geam"..ChatId) == "del" then
 lock_geam = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:geam"..ChatId) == "ked" then 
-lock_geam = "بالتقيد "    
+lock_geam = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:geam"..ChatId) == "ktm" then 
 lock_geam = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:geam"..ChatId) == "kick" then 
@@ -455,7 +455,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "del" then
 lock_vico = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "ked" then 
-lock_vico = "بالتقيد "    
+lock_vico = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "ktm" then 
 lock_vico = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:vico"..ChatId) == "kick" then 
@@ -466,7 +466,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Keyboard"..ChatId) == "del" then
 lock_inlin = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Keyboard"..ChatId) == "ked" then 
-lock_inlin = "بالتقيد "
+lock_inlin = "بالتقييد "
 elseif Redis:get(TheKOIA.."KOIA:Lock:Keyboard"..ChatId) == "ktm" then 
 lock_inlin = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Keyboard"..ChatId) == "kick" then 
@@ -477,7 +477,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:forward"..ChatId) == "del" then
 lock_fwd = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:forward"..ChatId) == "ked" then 
-lock_fwd = "بالتقيد "    
+lock_fwd = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:forward"..ChatId) == "ktm" then 
 lock_fwd = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:forward"..ChatId) == "kick" then 
@@ -488,7 +488,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Document"..ChatId) == "del" then
 lock_file = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Document"..ChatId) == "ked" then 
-lock_file = "بالتقيد "    
+lock_file = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Document"..ChatId) == "ktm" then 
 lock_file = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Document"..ChatId) == "kick" then 
@@ -499,7 +499,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Unsupported"..ChatId) == "del" then
 lock_self = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Unsupported"..ChatId) == "ked" then 
-lock_self = "بالتقيد "    
+lock_self = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Unsupported"..ChatId) == "ktm" then 
 lock_self = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Unsupported"..ChatId) == "kick" then 
@@ -510,7 +510,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Bot:kick"..ChatId) == "del" then
 lock_bots = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Bot:kick"..ChatId) == "ked" then
-lock_bots = "بالتقيد "   
+lock_bots = "بالتقييد "   
 elseif Redis:get(TheKOIA.."KOIA:Lock:Bot:kick"..ChatId) == "kick" then
 lock_bots = "بالطرد "    
 else
@@ -519,7 +519,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Markdaun"..ChatId) == "del" then
 lock_mark = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Markdaun"..ChatId) == "ked" then 
-lock_mark = "بالتقيد "    
+lock_mark = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Markdaun"..ChatId) == "ktm" then 
 lock_mark = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Markdaun"..ChatId) == "kick" then 
@@ -530,7 +530,7 @@ end
 if Redis:get(TheKOIA.."KOIA:Lock:Spam"..ChatId) == "del" then    
 lock_spam = "✔️"
 elseif Redis:get(TheKOIA.."KOIA:Lock:Spam"..ChatId) == "ked" then 
-lock_spam = "بالتقيد "    
+lock_spam = "بالتقييد "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Spam"..ChatId) == "ktm" then 
 lock_spam = "بالكتم "    
 elseif Redis:get(TheKOIA.."KOIA:Lock:Spam"..ChatId) == "kick" then 
@@ -1112,12 +1112,12 @@ if Pin_Msg and not msg.Managers then
 if Pin_Msg:match("(%d+)") then 
 local PinMsg = LuaTele.pinChatMessage(msg_chat_id,Pin_Msg,true)
 if PinMsg.luatele~= "ok" then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙لا استطيع تثبيت الرسائل ليست لديه صلاحيه","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙لا استطيع تثبيت الرسائل ليست لديه صلاحية","md",true)
 end
 end
 local UnPin = LuaTele.unpinChatMessage(msg_chat_id) 
 if UnPin.luatele ~= "ok" then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙لا استطيع الغاء تثبيت الرسائل ليست لديه صلاحيه","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙لا استطيع الغاء تثبيت الرسائل ليست لديه صلاحية","md",true)
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙التثبيت معطل من قبل المدراء ","md",true)
 end
@@ -1298,7 +1298,7 @@ if msg.content.photo and Redis:get(TheKOIA.."KOIA:Chat:Photo"..msg_chat_id..":".
 local ChatPhoto = LuaTele.setChatPhoto(msg_chat_id,msg.content.photo.sizes[2].photo.remote.id)
 if (ChatPhoto.luatele == "error") then
 Redis:del(TheKOIA.."KOIA:Chat:Photo"..msg_chat_id..":"..msg.sender.user_id)
-return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙لا استطيع تغيير صورة المجموعة لاني لست ادمن او ليست لديه الصلاحيه ","md",true)    
+return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙لا استطيع تغيير صورة المجموعة لاني لست ادمن او ليست لديه الصلاحية ","md",true)    
 end
 Redis:del(TheKOIA.."KOIA:Chat:Photo"..msg_chat_id..":"..msg.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تغيير صورة المجموعة المجموعة الى ","md",true)    
@@ -3004,7 +3004,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).Delmsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حذف الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حذف الرسائل* ',"md",true)  
 end
 if tonumber(NumMessage) > 1000 then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙العدد اكثر من 1000 لا تستطيع الحذف',"md",true)  
@@ -4950,7 +4950,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -4989,7 +4989,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then
@@ -5020,7 +5020,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Delmsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حذف الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حذف الرسائل* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then
@@ -5081,7 +5081,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5103,11 +5103,11 @@ if UserName[2] == 'يوم' then
 Time_Restrict = UserName[1]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if UserName[2] == 'ساعه' then
+if UserName[2] == 'ساعة' then
 Time_Restrict = UserName[1]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if UserName[2] == 'دقيقه' then
+if UserName[2] == 'دقيقة' then
 Time_Restrict = UserName[1]:match('(%d+)')
 Time = Time_Restrict * 60
 end
@@ -5128,7 +5128,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5148,11 +5148,11 @@ if TimeKed[2] == 'يوم' then
 Time_Restrict = TimeKed[1]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if TimeKed[2] == 'ساعه' then
+if TimeKed[2] == 'ساعة' then
 Time_Restrict = TimeKed[1]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if TimeKed[2] == 'دقيقه' then
+if TimeKed[2] == 'دقيقة' then
 Time_Restrict = TimeKed[1]:match('(%d+)')
 Time = Time_Restrict * 60
 end
@@ -5173,7 +5173,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5189,11 +5189,11 @@ if UserId[2] == 'يوم' then
 Time_Restrict = UserId[1]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if UserId[2] == 'ساعه' then
+if UserId[2] == 'ساعة' then
 Time_Restrict = UserId[1]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if UserId[2] == 'دقيقه' then
+if UserId[2] == 'دقيقة' then
 Time_Restrict = UserId[1]:match('(%d+)')
 Time = Time_Restrict * 60
 end
@@ -5245,7 +5245,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then
@@ -5274,7 +5274,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5419,7 +5419,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5480,7 +5480,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Delmsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حذف الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حذف الرسائل* ',"md",true)  
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -5536,7 +5536,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5568,7 +5568,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -5594,7 +5594,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5672,7 +5672,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5705,7 +5705,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local UserInfo = LuaTele.getUser(UserId)
 if UserInfo.luatele == "error" and UserInfo.code == 6 then
@@ -5730,7 +5730,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Delmsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حذف الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حذف الرسائل* ',"md",true)  
 end
 local UserInfo = LuaTele.getUser(UserId)
 if UserInfo.luatele == "error" and UserInfo.code == 6 then
@@ -5780,7 +5780,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5809,7 +5809,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local UserInfo = LuaTele.getUser(UserId)
 if UserInfo.luatele == "error" and UserInfo.code == 6 then
@@ -5832,7 +5832,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if not msg.Originators and not Redis:get(TheKOIA.."KOIA:Status:BanId"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تعطيل (الحظر : الطرد : التقييد) من قبل المدراء","md",true)
@@ -5856,7 +5856,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if StatusCanOrNotCan(msg_chat_id,msg.sender.user_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,msg.sender.user_id).." } *","md",true)  
@@ -6429,7 +6429,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتر�
 end
 Redis:hset(TheKOIA.."KOIA:Spam:Group:User"..msg_chat_id ,"Spam:User","del")  
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل التكرار").Lock,"md",true)  
-elseif text == "قفل التكرار بالتقيد" then 
+elseif text == "قفل التكرار بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6482,7 +6482,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Link"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الروابط").Lock,"md",true)  
 return false
 end 
-if text == "قفل الروابط بالتقيد" then 
+if text == "قفل الروابط بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6542,7 +6542,7 @@ Redis:set(TheKOIA.."KOIA:Lock:User:Name"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل المعرفات").Lock,"md",true)  
 return false
 end 
-if text == "قفل المعرفات بالتقيد" then 
+if text == "قفل المعرفات بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6602,7 +6602,7 @@ Redis:set(TheKOIA.."KOIA:Lock:hashtak"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل التاك").Lock,"md",true)  
 return false
 end 
-if text == "قفل التاك بالتقيد" then 
+if text == "قفل التاك بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6662,7 +6662,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Cmd"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الشارحة").Lock,"md",true)  
 return false
 end 
-if text == "قفل الشارحة بالتقيد" then 
+if text == "قفل الشارحة بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6722,7 +6722,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Photo"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الصور").Lock,"md",true)  
 return false
 end 
-if text == "قفل الصور بالتقيد" then 
+if text == "قفل الصور بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6782,7 +6782,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Video"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الفيديو").Lock,"md",true)  
 return false
 end 
-if text == "قفل الفيديو بالتقيد" then 
+if text == "قفل الفيديو بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6842,7 +6842,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Animation"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل المتحركة").Lock,"md",true)  
 return false
 end 
-if text == "قفل المتحركة بالتقيد" then 
+if text == "قفل المتحركة بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6902,7 +6902,7 @@ Redis:set(TheKOIA.."KOIA:Lock:geam"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الالعاب").Lock,"md",true)  
 return false
 end 
-if text == "قفل الالعاب بالتقيد" then 
+if text == "قفل الالعاب بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6962,7 +6962,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Audio"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الاغاني").Lock,"md",true)  
 return false
 end 
-if text == "قفل الاغاني بالتقيد" then 
+if text == "قفل الاغاني بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7022,7 +7022,7 @@ Redis:set(TheKOIA.."KOIA:Lock:vico"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الصوت").Lock,"md",true)  
 return false
 end 
-if text == "قفل الصوت بالتقيد" then 
+if text == "قفل الصوت بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7082,7 +7082,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Keyboard"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الكيبورد").Lock,"md",true)  
 return false
 end 
-if text == "قفل الكيبورد بالتقيد" then 
+if text == "قفل الكيبورد بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7142,7 +7142,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Sticker"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الملصقات").Lock,"md",true)  
 return false
 end 
-if text == "قفل الملصقات بالتقيد" then 
+if text == "قفل الملصقات بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7202,7 +7202,7 @@ Redis:set(TheKOIA.."KOIA:Lock:forward"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل التوجيه").Lock,"md",true)  
 return false
 end 
-if text == "قفل التوجيه بالتقيد" then 
+if text == "قفل التوجيه بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7262,7 +7262,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Document"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الملفات").Lock,"md",true)  
 return false
 end 
-if text == "قفل الملفات بالتقيد" then 
+if text == "قفل الملفات بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7322,7 +7322,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Unsupported"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل السيلفي").Lock,"md",true)  
 return false
 end 
-if text == "قفل السيلفي بالتقيد" then 
+if text == "قفل السيلفي بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7382,7 +7382,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Markdaun"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الماركداون").Lock,"md",true)  
 return false
 end 
-if text == "قفل الماركداون بالتقيد" then 
+if text == "قفل الماركداون بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7442,7 +7442,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Contact"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الجهات").Lock,"md",true)  
 return false
 end 
-if text == "قفل الجهات بالتقيد" then 
+if text == "قفل الجهات بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7502,7 +7502,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Spam"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل المنشورات").Lock,"md",true)  
 return false
 end 
-if text == "قفل المنشورات بالتقيد" then 
+if text == "قفل المنشورات بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7562,7 +7562,7 @@ Redis:set(TheKOIA.."KOIA:Lock:Inlen"..msg_chat_id,"del")
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم قفـل الانلاين").Lock,"md",true)  
 return false
 end 
-if text == "قفل الانلاين بالتقيد" then 
+if text == "قفل الانلاين بالتقييد" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -7645,7 +7645,7 @@ return LuaTele.sendText(msg_chat_id, msg_id, "🇸🇦︙ Link Group : \n["..Get
 else
 local LinkGroup = LuaTele.generateChatInviteLink(msg_chat_id,'taha',tonumber(msg.date+86400),100,false)
 if LinkGroup.code == 3 then
-return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙لا استطيع جلب الرابط بسبب ليس لدي صلاحيه دعوه مستخدمين من خلال الرابط ","md",true)
+return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙لا استطيع جلب الرابط بسبب ليس لدي صلاحية دعوه مستخدمين من خلال الرابط ","md",true)
 end
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text = Get_Chat.title, url = LinkGroup.invite_link},},}}
@@ -7735,7 +7735,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).Info == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تغيير المعلومات* ',"md",true)  
 end
 Redis:setex(TheKOIA.."KOIA:Set:Description:" .. msg_chat_id .. ":" .. msg.sender.user_id, 600, true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙ارسل لي وصف المجموعة الان","md",true)  
@@ -7752,7 +7752,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).Info == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تغيير المعلومات* ',"md",true)  
 end
 LuaTele.setChatDescription(msg_chat_id, '') 
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم ازالة قوانين المجموعة","md",true)    
@@ -7771,7 +7771,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).Info == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تغيير المعلومات* ',"md",true)  
 end
 LuaTele.setChatTitle(msg_chat_id,NameChat)
 return LuaTele.sendText(msg_chat_id,msg_id,"🇸🇦︙تم تغيير اسم المجموعة الى : "..NameChat,"md",true)    
@@ -7786,7 +7786,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n•عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Info == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*•البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*•البوت ليس لديه صلاحية تغيير المعلومات* ',"md",true)  
 end
 Redis:set(TheKOIA.."Chat:Photo"..msg_chat_id..":"..msg.sender.user_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"•ارسل الصورة لوضعها","md",true)    
@@ -8004,7 +8004,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).PinMsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تثبيت الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تثبيت الرسائل* ',"md",true)  
 end
 LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم تثبيت الرساله","md",true)
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
@@ -8022,7 +8022,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).PinMsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تثبيت الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تثبيت الرسائل* ',"md",true)  
 end
 LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم الغاء تثبيت الرساله","md",true)
 LuaTele.unpinChatMessage(msg_chat_id) 
@@ -8039,7 +8039,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).PinMsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه تثبيت الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية تثبيت الرسائل* ',"md",true)  
 end
 LuaTele.sendText(msg_chat_id,msg_id,"\n🇸🇦︙تم الغاء تثبيت جميع الرسائل","md",true)
 for i=0, 20 do
@@ -8542,7 +8542,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* 🇸🇦︙عذرا البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -8573,7 +8573,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* 🇸🇦︙عذرا البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName[1])
 if not UserId_Info.id then
@@ -8606,7 +8606,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -8643,7 +8643,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then
@@ -8681,7 +8681,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -8713,7 +8713,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).SetAdmin == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه اضافة مشرفين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية اضافة مشرفين* ',"md",true)  
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then
@@ -8755,7 +8755,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Delmsg == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حذف الرسائل* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حذف الرسائل* ',"md",true)  
 end
 LuaTele.deleteMessages(msg.chat_id,{[1]= msg.reply_to_message_id})
 LuaTele.deleteMessages(msg.chat_id,{[1]= msg_id})
@@ -9027,7 +9027,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🇸🇦︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
@@ -9055,7 +9055,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Bots", "*", 0, 200)
 local List_Members = Info_Members.members
@@ -9080,7 +9080,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Banned", "*", 0, 200)
 x = 0
@@ -9105,7 +9105,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*🇸🇦︙عذرآ البوت ليس ادمن في المجموعة يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 if GetInfoBot(msg).BanUser == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحيه حظر المستخدمين* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙البوت ليس لديه صلاحية حظر المستخدمين* ',"md",true)  
 end
 local Info_Members = LuaTele.searchChatMembers(msg_chat_id, "*", 200)
 local List_Members = Info_Members.members
@@ -10759,11 +10759,11 @@ end
 end
 if text == "حزوره" then
 if Redis:get(TheKOIA.."KOIA:Status:Games"..msg.chat_id) then
-Hzora = {"الجرس","عقرب الساعه","السمك","المطر","5","الكتاب","البسمار","7","الكعبه","بيت الشعر","لهانه","انا","امي","الابره","الساعه","22","غلط","كم الساعه","البيتنجان","البيض","المرايه","الضوء","الهواء","الضل","العمر","القلم","المشط","الحفره","البحر","الثلج","الاسفنج","الصوت","بلم"};
+Hzora = {"الجرس","عقرب الساعة","السمك","المطر","5","الكتاب","البسمار","7","الكعبه","بيت الشعر","لهانه","انا","امي","الابره","الساعة","22","غلط","كم الساعة","البيتنجان","البيض","المرايه","الضوء","الهواء","الضل","العمر","القلم","المشط","الحفره","البحر","الثلج","الاسفنج","الصوت","بلم"};
 name = Hzora[math.random(#Hzora)]
 Redis:set(TheKOIA.."KOIA:Game:Riddles"..msg.chat_id,name)
 name = string.gsub(name,"الجرس","شيئ اذا لمسته صرخ ما هوه ؟")
-name = string.gsub(name,"عقرب الساعه","اخوان لا يستطيعان تمضيه اكثر من دقيقه معا فما هما ؟")
+name = string.gsub(name,"عقرب الساعة","اخوان لا يستطيعان تمضيه اكثر من دقيقة معا فما هما ؟")
 name = string.gsub(name,"السمك","ما هو الحيوان الذي لم يصعد الى سفينة نوح عليه السلام ؟")
 name = string.gsub(name,"المطر","شيئ يسقط على رأسك من الاعلى ولا يجرحك فما هو ؟")
 name = string.gsub(name,"5","ما العدد الذي اذا ضربته بنفسه واضفت عليه 5 يصبح ثلاثين ")
@@ -10776,10 +10776,10 @@ name = string.gsub(name,"لهانه","وحده حلوه ومغروره تلبس 
 name = string.gsub(name,"انا","ابن امك وابن ابيك وليس باختك ولا باخيك فمن يكون ؟")
 name = string.gsub(name,"امي","اخت خالك وليست خالتك من تكون ؟ ")
 name = string.gsub(name,"الابره","ما هو الشيئ الذي كلما خطا خطوه فقد شيئا من ذيله ؟ ")
-name = string.gsub(name,"الساعه","ما هو الشيئ الذي يقول الصدق ولكنه اذا جاع كذب ؟")
-name = string.gsub(name,"22","كم مره ينطبق عقربا الساعه على بعضهما في اليوم الواحد ")
+name = string.gsub(name,"الساعة","ما هو الشيئ الذي يقول الصدق ولكنه اذا جاع كذب ؟")
+name = string.gsub(name,"22","كم مره ينطبق عقربا الساعة على بعضهما في اليوم الواحد ")
 name = string.gsub(name,"غلط","ما هي الكلمه الوحيده التي تلفض غلط دائما ؟ ")
-name = string.gsub(name,"كم الساعه","ما هو السؤال الذي تختلف اجابته دائما ؟")
+name = string.gsub(name,"كم الساعة","ما هو السؤال الذي تختلف اجابته دائما ؟")
 name = string.gsub(name,"البيتنجان","جسم اسود وقلب ابيض وراس اخظر فما هو ؟")
 name = string.gsub(name,"البيض","ماهو الشيئ الذي اسمه على لونه ؟")
 name = string.gsub(name,"المرايه","ارى كل شيئ من دون عيون من اكون ؟ ")
@@ -12018,7 +12018,7 @@ local TextHelp = [[*
 — — — — — — — — —
 🇸🇦︙قفل ، فتح ← الامر 
 🇸🇦︙تستطيع قفل حماية كما يلي ...
-🇸🇦︙← { بالتقيد ، بالطرد ، بالكتم }
+🇸🇦︙← { بالتقييد ، بالطرد ، بالكتم }
 — — — — — — — — —
 🇸🇦︙الروابط
 🇸🇦︙المعرف
@@ -12076,8 +12076,8 @@ local TextHelp = [[*
 — — — — — — — — —
 🇸🇦︙رفع، تنزيل ← مميز
 🇸🇦︙تاك للكل ، عدد القروب
-🇸🇦︙كتم ، حظر ، طرد ، تقيد
-🇸🇦︙الغاء كتم ، الغاء حظر ، الغاء تقيد
+🇸🇦︙كتم ، حظر ، طرد ، تقييد
+🇸🇦︙الغاء كتم ، الغاء حظر ، الغاء تقييد
 🇸🇦︙منع ، الغاء منع 
 — — — — — — — — —
 🇸🇦︙عرض القوائم كما يلي ...
@@ -13092,11 +13092,11 @@ if Text and Text:match('(%d+)/groupNum1//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum1//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).change_info) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه تغيير المعلومات", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية تغيير المعلومات", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,'❬ ❌ ❭',nil,nil,nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,0, 0, 0, 0,0,0,1,0})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه تغيير المعلومات", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية تغيير المعلومات", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,'❬ ✔️ ❭',nil,nil,nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,1, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 end
@@ -13106,11 +13106,11 @@ if Text and Text:match('(%d+)/groupNum2//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum2//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).pin_messages) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه التثبيت", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية التثبيت", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,'❬ ❌ ❭',nil,nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,0, GetAdminsNum(ChatId,UserId[2]).promote})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه التثبيت", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية التثبيت", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,'❬ ✔️ ❭',nil,nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,1, GetAdminsNum(ChatId,UserId[2]).promote})
 end
@@ -13120,11 +13120,11 @@ if Text and Text:match('(%d+)/groupNum3//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum3//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).restrict_members) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه الحظر", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية الحظر", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,'❬ ❌ ❭',nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, 0 ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه الحظر", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية الحظر", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,'❬ ✔️ ❭',nil,nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, 1 ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 end
@@ -13134,11 +13134,11 @@ if Text and Text:match('(%d+)/groupNum4//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum4//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).invite_users) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه دعوه المستخدمين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية دعوه المستخدمين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,'❬ ❌ ❭',nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, 0, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه دعوه المستخدمين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية دعوه المستخدمين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,'❬ ✔️ ❭',nil,nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, 1, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 end
@@ -13148,11 +13148,11 @@ if Text and Text:match('(%d+)/groupNum5//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum5//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).delete_messages) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه مسح الرسائل", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية مسح الرسائل", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,'❬ ❌ ❭',nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, 0, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه مسح الرسائل", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية مسح الرسائل", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,'❬ ✔️ ❭',nil)
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, 1, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, GetAdminsNum(ChatId,UserId[2]).promote})
 end
@@ -13162,11 +13162,11 @@ if Text and Text:match('(%d+)/groupNum6//(%d+)') then
 local UserId = {Text:match('(%d+)/groupNum6//(%d+)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
 if tonumber(GetAdminsNum(ChatId,UserId[2]).promote) == 1 then
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحيه اضافه مشرفين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تعطيل صلاحية اضافه مشرفين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'❬ ❌ ❭')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 0})
 else
-LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحيه اضافه مشرفين", true)
+LuaTele.answerCallbackQuery(data.id, "🇸🇦︙تم تفعيل صلاحية اضافه مشرفين", true)
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'❬ ✔️ ❭')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 1})
 end
