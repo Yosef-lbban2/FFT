@@ -1576,7 +1576,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
  `#name` ↬ اسم المستخدم
  `#id` ↬ ايدي المستخدم
  `#stast` ↬ رتبة المستخدم
- `#edit` ↬ عدد السحكات
+ `#edit` ↬ عدد التعديلات
 
 ]],"md",true)  
 return false
@@ -1759,7 +1759,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
  `#name` ↬ اسم المستخدم
  `#id` ↬ ايدي المستخدم
  `#stast` ↬ رتبة المستخدم
- `#edit` ↬ عدد السحكات
+ `#edit` ↬ عدد التعديلات
 
 ]],"md",true)  
 return false
@@ -6331,7 +6331,7 @@ end
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"🇸🇦︙تم فـتح جميع الاوامر").unLock,"md",true)  
 return false
 end 
-if text == "@all" or text == "تاك عام" or text == "all" then
+if text == "@all" or text == "نداء" or text == "all" then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🇸🇦︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -6383,35 +6383,35 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 
-if text == "صورة" or text == "صورة" then 
+if text == "123456798" or text == "123456789" then 
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار صورة لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/PhotosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "متحركة" or text == "متحركة" then 
+if text == "123456798" or text == "123456789" then 
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار متحركة لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "ريمكس" or text == "ريماكس" then 
+if text == "123456789" or text == "123456789" then 
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار ريمكس لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "شعر" or text == "اشعار" then 
+if text == "123456789" or text == "123456" then 
 Abs = math.random(3,140); 
 local Text ='*✯︙تم اختيار شعر لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "ا123456123456ه" or text == "اغاني" then 
+if text == "ا123456123456ه" or text == "123456132456" then 
 Abs = math.random(4,140); 
 local Text ='*✯︙تم اختيار ا123456123456ه لك*'
 local MsgId = msg.id/2097152/0.5
@@ -8737,7 +8737,7 @@ end
 if text == 'مسح رسائلي' then
 Redis:del(TheKOIA..'KOIA:Num:Message:User'..msg.chat_id..':'..msg.sender.user_id)
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع رسائلك ',"md",true)  
-elseif text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' then
+elseif text == 'مسح تعديلاتي' or text == 'مسح تعديلاتي' then
 Redis:del(TheKOIA..'KOIA:Num:Message:Edit'..msg.chat_id..':'..msg.sender.user_id)
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع تعديلاتك ',"md",true)  
 elseif text == 'مسح جهاتي' then
@@ -8745,7 +8745,7 @@ Redis:del(TheKOIA..'KOIA:Num:Add:Memp'..msg.chat_id..':'..msg.sender.user_id)
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙تم مسح جميع جهاتك المضافه ',"md",true)  
 elseif text == 'رسائلي' then
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد رسائلك هنا *~ '..(Redis:get(TheKOIA..'KOIA:Num:Message:User'..msg.chat_id..':'..msg.sender.user_id) or 1)..'*',"md",true)  
-elseif text == 'سحكاتي' or text == 'تعديلاتي' then
+elseif text == 'تعديلاتي' or text == 'تعديلاتي' then
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد التعديلات هنا *~ '..(Redis:get(TheKOIA..'KOIA:Num:Message:Edit'..msg.chat_id..msg.sender.user_id) or 0)..'*',"md",true)  
 elseif text == 'جهاتي' then
 LuaTele.sendText(msg_chat_id,msg_id,'🇸🇦︙عدد جهاتك المضافه هنا *~ '..(Redis:get(TheKOIA.."KOIA:Num:Add:Memp"..msg.chat_id..":"..msg.sender.user_id) or 0)..'*',"md",true)  
@@ -8778,7 +8778,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,[[
  🇸🇦︙ `#id` » ايدي المستخدم
  🇸🇦︙ `#auto` » نسبة التفاعل
  🇸🇦︙ `#stast` » رتبة المستخدم 
- 🇸🇦︙ `#edit` » عدد السحكات
+ 🇸🇦︙ `#edit` » عدد التعديلات
  🇸🇦︙ `#game` » عدد المجوهرات
  🇸🇦︙ `#AddMem` » عدد الجهات
  🇸🇦︙ `#Description` » تعليق الصورة
@@ -8814,7 +8814,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,[[
 🇸🇦︙`#id` » ايدي المستخدم
 🇸🇦︙`#auto` » نسبة التفاعل
 🇸🇦︙`#stast` » رتبة المستخدم 
-🇸🇦︙`#edit` » عدد السحكات
+🇸🇦︙`#edit` » عدد التعديلات
 🇸🇦︙`#game` » عدد المجوهرات
 🇸🇦︙`#AddMem` » عدد الجهات
 🇸🇦︙`#Description` » تعليق الصورة
@@ -11075,7 +11075,7 @@ Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'ر','ا�
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'رر','ردود المدير')
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'،،','مسح المكتومين')
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'رد','اضف رد')
-Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'سح','مسح سحكاتي')
+Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'سح','مسح تعديلاتي')
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'غ','123456123456')
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'رس','رسائلي')
 Redis:set(TheKOIA.."KOIA:Get:Reides:Commands:Group"..msg_chat_id..":"..'ثانوي','رفع مطور ثانوي')
@@ -11097,7 +11097,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,[[*
 🇸🇦︙ ردود المدير - رر .
 🇸🇦︙ مسح المكتومين - ،، .
 🇸🇦︙ اضف رد - رد .
-🇸🇦︙ مسح سحكاتي - سح .
+🇸🇦︙ مسح تعديلاتي - سح .
 🇸🇦︙ مسح رسائلي - رس .
 🇸🇦︙ 123456123456 - غ .
 *]],"md")
@@ -12078,6 +12078,8 @@ local TextHelp = [[*
 🇸🇦︙تاك للكل ، عدد القروب
 🇸🇦︙كتم ، حظر ، طرد ، تقييد
 🇸🇦︙الغاء كتم ، الغاء حظر ، الغاء تقييد
+🇸🇦︙تقييد الرقم .. يوم .. ساعة .. دقيقة
+🇸🇦︙@all - نداء
 🇸🇦︙منع ، الغاء منع 
 ≪━━━●مسلم●━━━≫
 🇸🇦︙عرض القوائم كما يلي ...
@@ -12092,7 +12094,7 @@ local TextHelp = [[*
 🇸🇦︙تفعيل ، تعطيل ← الترحيب
 🇸🇦︙تفعيل ، تعطيل ← الرابط
 🇸🇦︙جهاتي ،ايدي ، رسائلي
-🇸🇦︙سحكاتي ، مجوهراتي
+🇸🇦︙تعديلاتي ، مجوهراتي
 🇸🇦︙كشف البوتات
 ≪━━━●مسلم●━━━≫
 🇸🇦︙وضع ، ضع ← الاوامر التالية 
