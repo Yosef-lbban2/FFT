@@ -12006,7 +12006,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12064,7 +12064,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12122,7 +12122,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12175,7 +12175,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12215,7 +12215,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12270,7 +12270,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -12308,7 +12308,7 @@ data = {
 {text = 'اوامر مطورين', data = IdUser..'/help5'}, {text = 'الالعاب', data = IdUser..'/help6'}, 
 },
 {
-{text = 'القائمة الرئيسيه ', data = IdUser..'/helpall'},
+{text = 'القائمة الرئيسية ', data = IdUser..'/helpall'},
 },
 {
 {text = '- قناة السورس', url = 't.me/yousef_labban1'}, 
@@ -13287,7 +13287,7 @@ data = {
 {text = 'تعطيل اطردني', data = IdUser..'/'.. 'unmute_kickme'},{text = 'تفعيل اطردني', data = IdUser..'/'.. 'mute_kickme'},
 },
 {
-{text = '{ القائمة الرئيسيه }', data = IdUser..'/helpall'},
+{text = '{ القائمة الرئيسية }', data = IdUser..'/helpall'},
 },
 {
 {text = '- اخفاء الامر ', data =IdUser..'/'.. 'delAmr'}
@@ -13347,7 +13347,7 @@ data = {
 {text = '- الرجوع ... ', data =IdUser..'/'.. 'NoNextSeting'}
 },
 {
-{text = '{ القائمة الرئيسيه }', data = IdUser..'/helpall'},
+{text = '{ القائمة الرئيسية }', data = IdUser..'/helpall'},
 },
 {
 {text = '- اخفاء الامر ', data =IdUser..'/'.. '/delAmr'}
@@ -13404,7 +13404,7 @@ data = {
 {text = '- التالي ... ', data =IdUser..'/'.. 'NextSeting'}
 },
 {
-{text = '{ القائمة الرئيسيه }', data = IdUser..'/helpall'},
+{text = '{ القائمة الرئيسية }', data = IdUser..'/helpall'},
 },
 {
 {text = '- اخفاء الامر ', data =IdUser..'/'.. 'delAmr'}
