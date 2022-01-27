@@ -7777,19 +7777,19 @@ LuaTele.setChatTitle(msg_chat_id,NameChat)
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم تغيير اسم المجموعه الى : "..NameChat,"md",true)    
 end
 
-if text == ("ضع صوره") then  
+if text == ("ضع صورة") then  
 if not msg.Addictive then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*•هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheKOIA..'KOIA:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n᥀︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/yousef_labban1'}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n•عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if GetInfoBot(msg).Info == false then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*•البوت ليس لديه صلاحيه تغيير المعلومات* ',"md",true)  
 end
-Redis:set(TheKOIA.."KOIA:Chat:Photo"..msg_chat_id..":"..msg.sender.user_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙ارسل الصوره لوضعها","md",true)    
+Redis:set(TheKOIA.."Chat:Photo"..msg_chat_id..":"..msg.sender.user_id,true) 
+return LuaTele.sendText(msg_chat_id,msg_id,"•ارسل الصورة لوضعها","md",true)    
 end
 
 if text == "مسح قائمه المنع" then   
